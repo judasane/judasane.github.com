@@ -2,6 +2,11 @@
     Created on : 15/09/2013, 02:01:31 PM
     Author     : Juan
 */
+
+*{
+    margin:0;
+    padding:0;
+}
 body{
     color: #333;
     margin: 30px;
@@ -15,7 +20,7 @@ a{
     color: #333;
 }
 #class_tag{
-    font-size: .7em;
+    font-size: .9em;
 }
 h1{
     display: inline;
@@ -26,8 +31,9 @@ header{
     font-weight: 900;
 }
 .code_tag,.blue_code{
-    font-size: .5em;
+    font-size: .6em;
     color: #6060FF;
+    margin-right: .4em;
 }
 nav{
     font-size: 3em;
@@ -36,12 +42,15 @@ nav span{
     font-size: 1.7em;
 }
 .comments{
+    margin-top: .7em;
+    margin-bottom: -0.3em;
+    font-size: 0.3em;
     color: #777;
 }
 #img_me{
     float:left;
     width: 350px;
-    margin: 20px;
+    margin: 0 50px 20px 50px;
 }
 #description{
     font-size: 1.3em;
@@ -50,4 +59,18 @@ nav span{
      margin:0 auto 0 auto;
     width: 960px;
     height: 600px;
+}
+#content_container{
+    padding-left: 30px;
+}
+.hidden{
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+nav div:hover .hidden{
+    max-height: 300px;
+    opacity: 1;
+    transition: all 1s;
 }
