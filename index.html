@@ -14,62 +14,71 @@
                 <div id="img_me">
                     <div class="comments" id="description">
                         /*Hola, soy Juan, un chico inquieto por el desarrollo web, amante de la innovación y dispuesto a asumir los 
-                        retos a los que me enfrentela vida.*/ 
+                        retos a los que me enfrente la vida.*/ 
                     </div>
-                    <img src="img/sanchezneme.png" />
+                    <img alt="¡Este soy yo!" src="img/sanchezneme.png" />
                 </div>
-                <nav>
-                    <div>
+                <nav id="menu_principal">
+                    <a href="about">
                         <div class="comments hidden">
-<pre>/**
+                            <pre>/**
 * Conoce un poco más acerca de quién soy
 * @var JuanSánchez
 */</pre>
                         </div>
-                        <span class="code_tag">public</span><a href="about_me.php">$acercaDeMi</a>
-                    </div>
-                    <div>
-                    </div>
-                    <div>
+                        <span class="code_tag">public</span>$acercaDeMi;
+
+                    </a>
+                    <a href="social">
                         <div class="comments hidden"><pre>/**
 * Proyectos que he realizado.
 * @var Portfolio
 */</pre>
                         </div>
-                        <span class="code_tag">public</span><a>$social</a>
-                    </div>
-                    <div>
+                        <span class="code_tag">public</span>$social;
+                    </a>
+                    <a href="blog">
                         <div class="comments hidden"><pre>/**
 * Ciertas cosillas que ocasionalmente escribo.
 * @var Blogging
 */</pre>
                         </div>
-                        <span class="code_tag">public</span><a>$blog</a>
-                    </div>
-                    <div>
+                        <span class="code_tag">public</span>$blog;
+                    </a>
+                    <a href="servicios">
                         <div class="comments hidden"><pre>/**
 * En qué puedo ayudarte
 * @var Services
 */</pre>
                         </div>
-                        <span class="code_tag">public</span><a>$servicios</a>
-                    </div>
-                    <div>
+                        <span class="code_tag">public</span>$servicios;
+                    </a>
+                    <a href="vidaPersonal">
                         <div class="comments hidden"><pre>/**
 * Mi vida más a fondo
 * @var Confidential
 */</pre>
                         </div>
-                        <span class="code_tag">private</span><a>$vidaPersonal</a>
-                    </div>
-                    <div>
+                        <span class="code_tag">private</span>$vidaPersonal;
+                    </a>
+                    <a href="Contacto">
                         <div class="comments hidden"><pre>/**
 * Contáctame si quieres.
 * @return Message Mi respuesta
 */</pre>
                         </div>
-                        <span class="code_tag">public function</span><a>contacto()</a>
-                    </div>
+                        <span class="code_tag">public function</span>contacto();
+                    </a>
+                    <a href="english">
+                        <div class="comments hidden">
+                            <pre>/**
+* You can also watch my site in english
+* @return Site My personal site
+*/</pre>
+                        </div>
+                        <div id="switch_language" class="control"><span class="code_tag green">$this-></span>setLanguage(<span class="red">"English"</span>);</div>
+
+                    </a>
                 </nav>
             </div>
         </div>
